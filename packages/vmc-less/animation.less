@@ -1,0 +1,28 @@
+.vmc-slide-bottom-enter-active, .vmc-slide-bottom-leave-active{
+	transition: 0.2s ease-out;
+	-webkit-transition: .2s ease-out;
+}
+.vmc-slide-bottom-enter, .vmc-slide-bottom-leave-to{
+	transform: translate3d(0, 100%, 0);
+	-webkit-transform: translate3d(0, 100%, 0);
+}
+.vmc-fade-enter-active{
+	transition: .3s ease-out;
+	opacity: 1;
+}
+.vmc-fade-enter{
+	opacity: 0;
+}
+.vmc-animation-rotate{
+	animation: loading-rotate 1s linear  infinite;
+	-webkit-animation: loading-rotate 1s linear infinite;
+}
+
+@keyframes loading-rotate{
+	0%{
+		transform: rotateZ(0);
+	}
+	100%{
+		transform: rotateZ(360deg);
+	}
+}
